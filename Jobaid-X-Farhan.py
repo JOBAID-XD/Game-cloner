@@ -983,7 +983,7 @@ def approval():
         print ("")
         print (" Your Token : "+UMO+id)
         print ("\n")
-        os.system("espeak \"assalamualaikum ,I am FARHAN x JOBAID er  ROBOT and my boss is FARHAN x JOBAID.Sir this tool is paid because 100% ok id just now login\"")
+        os.system("espeak \"assalamualaikum ,Sir This Tool Is Paid \"")
         name = input(" Your Name : ")
         os.system(f"espeak \"{name} ,prass Enter to send your Token\"")
         print ("")
